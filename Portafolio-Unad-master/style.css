@@ -350,6 +350,79 @@ html{
     display: block;
 }
 
+/* PORTFOLIO */
+
+.portfolio{
+    background: #0f0f1a;
+    color: white;
+    padding: 60px 20px;
+}
+
+.portfolio h2{
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 40px;
+    color: white;
+}
+
+.galery{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap: 25px;
+}
+
+.proyects{
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    background: #1a1a2e;
+    box-shadow: 0 10px 20px rgba(0,0,0,.3);
+    transition: .4s;
+}
+
+.proyects:hover{
+    transform: translateY(-10px);
+}
+
+.proyects img{
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    display: block;
+    transition: .5s;
+}
+
+.proyects:hover img{
+    transform: scale(1.08);
+}
+
+.overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background: linear-gradient(
+        transparent,
+        rgba(0,0,0,.95)
+    );
+}
+
+.overlay h3{
+    color: #c084fc;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.overlay p{
+    font-size: 15px;
+    margin: 3px 0;
+}
+
+.proyects a{
+    text-decoration: none;
+    color: white;
+}
 /*SECTION CONTACT*/
 .contact{
     background: #9ba8ab;
